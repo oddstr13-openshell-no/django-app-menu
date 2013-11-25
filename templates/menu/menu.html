@@ -1,0 +1,3 @@
+<ul>
+{% for item in menuitems %}<li class="{% if forloop.last %} last{% endif %}{% if forloop.first %} first{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>{% endfor %}
+</ul>
